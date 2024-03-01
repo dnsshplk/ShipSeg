@@ -32,7 +32,7 @@ unet\custom_unet_weights.h5 - saved model weights
 
 ## Evaluation
 
-When we removed 90% of all no-ship images from out dataset, we greatly changed the nature of our data. To make sure our model performs well on the original distibution of images, we perform an additional evaluation data with the original balance of images.
+When we removed 90% of all no-ship images from out dataset, we greatly changed the nature of our data. To make sure our model performs well on the original distribution of images, we perform an additional evaluation on the data with the original balance of images.
 
 
 ## Results
