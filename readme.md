@@ -23,6 +23,7 @@ Model-building-related code is located in unet\model_build.py
 For this task, the U-Net architecture is used. I have combined a pretrained ResNet50 encoder and a custom decoder.
 
 ## Training
+train.py
 
 During model training, we use the Adam optimizer with a Polynomial learning rate scheduler. We utilize the DiceBCELoss as our loss function and evaluate performance using IoU alogside prefered DiceScore metrics. The model undergoes training for 15 epochs.
 
@@ -31,6 +32,7 @@ The training have been done in kaggle notebook with GPU P100 accelerator. Each e
 unet\custom_unet_weights.h5 - saved model weights
 
 ## Evaluation
+eval.py
 
 When we removed 90% of all no-ship images from out dataset, we greatly changed the nature of our data. To make sure our model performs well on the original distribution of images, we perform an additional evaluation on the data with the original balance of images.
 
@@ -50,6 +52,7 @@ Although here we optained sligtly worse results, balancing the training data hel
 
 
 ## Inference
+inference.py
 
 In oder to make an inference, you need to specify an input_folder with images and output folder. Also it is possible to store masks as images with -sm argument:
 python inference.py -i input_folder -o ouput_folder -sm
