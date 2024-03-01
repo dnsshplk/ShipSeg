@@ -3,14 +3,14 @@
 ## EDA
 EDA code is located in EDA.ipynb
 
-During EDA I explored the distribution of images with and without ships. The data is imbalanced as 78% of all images does not contain any ships. This can badly affect traning of a model. In order to make data more balanced, I decided to take only 10% of no-ship images to the training set. (The quality of the model is improved and training time is reduced significantly)
+During EDA I explored the distribution of images with and without ships. The data is imbalanced as 78% of all images does not contain any ships. This can badly affect traning of a model. In order to make data more balanced, I decided to take only 10% of no-ship images to the training set. (The quality of the model is improved and training time has reduced significantly)
 
 Also I have explored the distribution of colors on images with and without ships. This was not as helpful because ships on images often take much less space than background. However, the colors of ships are generally different from background, which makes them well-distinguishable.
 
 
 ## Data
 
-All data related located in utils\data.py.
+All data-related code located in utils\data.py.
 
 I decided to create one DataGenerator for training and testing data. The type of data which is yield from the DataGenerator is determined by the "train" parameter: DataGenerator(... ,train = True/False).
 
