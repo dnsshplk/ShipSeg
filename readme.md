@@ -60,6 +60,7 @@ python inference.py -i input_folder -o ouput_folder -sm
 The default values: -i: "input_folder", -o: "ouput_folder"
 
 ## Visualize Results
+
 ![alt text](res.png)
 
 
