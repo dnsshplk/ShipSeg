@@ -1,0 +1,6 @@
+numpy==1.26.3
+pandas==2.1.4
+opencv-python==4.8.1.78
+tensorflow==2.10.1
+pyyaml==6.0.1
+matplotlib==3.7.2

@@ -1,0 +1,21 @@
+train:
+  n_epochs: 15
+
+  lr_scheduler:
+    initial_learning_rate: 0.01
+    decay_steps: 1000
+    end_learning_rate: 0.00001
+    power: 0.5
+
+data:
+  img_orig_size: 768
+  img_dsize: 224
+  n_classes: 1
+  no_ship_train_frac: 0.1
+
+paths:
+  model_folder: "unet"
+  weights: "custom_unet_weights.h5"
+  data_folder: "data"
+  train_imgs_folder: "train_v2"
+  masks_csv_file: 'train_ship_segmentations_v2.csv'
